@@ -11,9 +11,13 @@
 |
 */
 
+/* GENERIC PAGE ROUTES */
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.home');
 });
+
+/* AUTH ROUTES */
 
 Auth::routes();
 
