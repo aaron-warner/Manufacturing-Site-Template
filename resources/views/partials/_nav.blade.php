@@ -27,27 +27,44 @@
 	<div class="row menu-container">
 		<div class="col-xs-10 col-xs-offset-1">
 
-			<div class="logo-container">
-				LOGO HERE
-			</div>
+			<div class="row nav-container">
 
-			<div class="nav-container">
+		        <div class="col-xs-2">
 
-				<nav>
-					<ul class="unstyled inline">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">News</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Products</a></li>
-						<li><a href="#">Contact</a></li>
-						<li id="login-item"><a href="/login">Login</a></li>
-						<li id="signup-item"><a href="/register">Sign Up</a></li>
-					</ul>
-				</nav>
+		            <span id="menu-btn" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+		            MENU
 
-			</div>
+		        </div>
+
+		        <div class="col-xs-8 text-center">
+		            LOGO HERE
+		        </div>
+
+		        <div class="col-xs-2 text-center">
+		            BUTTON 1 -- BUTTON 2
+		        </div>
+
+		    </div>
 
 		</div>
 	</div>
 
 </div>
+
+<!-- The overlay -->
+<div id="overlay-nav" class="overlay">
+
+	<!-- Button to close the overlay navigation -->
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+	<!-- Overlay content -->
+	<div class="overlay-nav-content">
+		<a href="/">Home</a>
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Products</a>
+		<a href="#">Contact</a>
+	</div>
+
+</div>
+
