@@ -29,19 +29,21 @@
 
 			<div class="row nav-container">
 
-		        <div class="col-xs-2">
+		        <div class="col-xs-3">
 
 		            <span id="menu-btn" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
-		            MENU
 
 		        </div>
 
-		        <div class="col-xs-8 text-center">
-		            LOGO HERE
+		        <div class="col-xs-6 text-center">
+		            <a href="/">
+		            	<img src="{{ asset('img/main-logo.png') }}" width="300" height="100" class="img-responsive img-center" />
+		            </a>
 		        </div>
 
-		        <div class="col-xs-2 text-center">
-		            BUTTON 1 -- BUTTON 2
+		        <div class="col-xs-3 text-center">
+		        	<a href="/login" class="btn btn-default">Login</a>
+			        <a href="/register" class="btn btn-primary">Register</a>
 		        </div>
 
 		    </div>
@@ -60,7 +62,7 @@
 	<!-- Overlay content -->
 	<div class="overlay-nav-content">
 		<a href="/">Home</a>
-		<a href="#">About</a>
+		<a href="#">News</a>
 		<a href="#">Services</a>
 		<a href="#">Products</a>
 		<a href="#">Contact</a>

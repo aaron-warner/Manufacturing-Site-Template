@@ -16,7 +16,7 @@
         <!-- Wrapper For Slides -->
         <div class="carousel-inner" role="listbox">
 
-            <!-- Third Slide -->
+            <!-- First Slide -->
             <div class="item active">
 
                 <!-- Slide Background -->
@@ -86,8 +86,9 @@
 
     </div> <!-- End  bootstrap-touch-slider Slider -->
 
-    <div class="row">
+    <div class="row"> <!-- Icon points section -->
 	    <div class="col-xs-10 col-xs-offset-1">
+
 		    <div class="row home-icon-container">
 
 		    	<div class="col-md-4 col-sm-6">
@@ -139,8 +140,127 @@
 		    	</div>
 
 		    </div>
+
+        </div>
+    </div> <!-- End icon points section -->
+
+    <div class="row recent-news-container"> <!-- Recent news section -->
+        <div class="col-xs-10 col-xs-offset-1">
+
+            <div class="row">
+
+                <h2 class="section-title">Recent News</h2>
+
+                <div class="col-md-4">
+
+                    <div class="article-container">
+                        <div class="article-image-container">
+                            <a href="#">
+                                <img src="{{ asset('img/article-image-1.jpg') }}" width="100%" height="100%" class="img-responsive" />
+                            </a>
+                        </div>
+                        <div class="article-title-container">
+                            <span class="article-title"><a href="#">100+ Jobs Created</a></span>
+                        </div>
+                        <div class="article-content-container">
+                            <p>
+                            We have just created a branch new facility in the West Midlands supplying over 100 jobs to west midlands residents who have recently either lefg college or undertook an apprenticeship...
+                            </p>
+                            <a href="/" class="btn btn-primary">Read More</a>
+                        </div>
+                        <div class="article-info-container">
+                            <span class="published-by">Published by: <a href="/">Feartech Ltd</a></span>
+                            <br>
+                            <span class="published-on"><i class="fa fa-calendar" aria-hidden="true"></i>  26/06/17</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="article-container">
+                        <div class="article-image-container">
+                            <a href="#">
+                                <img src="{{ asset('img/article-image-2.jpg') }}" width="100%" height="100%" class="img-responsive" />
+                            </a>
+                        </div>
+                        <div class="article-title-container">
+                            <span class="article-title"><a href="#">100+ Jobs Created</a></span>
+                        </div>
+                        <div class="article-content-container">
+                            <p>
+                            We have just created a branch new facility in the West Midlands supplying over 100 jobs to west midlands residents who have recently either lefg college or undertook an apprenticeship...
+                            </p>
+                            <a href="/" class="btn btn-primary">Read More</a>
+                        </div>
+                        <div class="article-info-container">
+                            <span class="published-by">Published by: <a href="/">Feartech Ltd</a></span>
+                            <br>
+                            <span class="published-on"><i class="fa fa-calendar" aria-hidden="true"></i>  26/06/17</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="article-container">
+                        <div class="article-image-container">
+                            <a href="#">
+                                <img src="{{ asset('img/article-image-3.jpg') }}" width="100%" height="100%" class="img-responsive" />
+                            </a>
+                        </div>
+                        <div class="article-title-container">
+                            <span class="article-title"><a href="#">100+ Jobs Created</a></span>
+                        </div>
+                        <div class="article-content-container">
+                            <p>
+                            We have just created a branch new facility in the West Midlands supplying over 100 jobs to west midlands residents who have recently either lefg college or undertook an apprenticeship...
+                            </p>
+                            <a href="/" class="btn btn-primary">Read More</a>
+                        </div>
+                        <div class="article-info-container">
+                            <span class="published-by">Published by: <a href="/">Feartech Ltd</a></span>
+                            <br>
+                            <span class="published-on"><i class="fa fa-calendar" aria-hidden="true"></i>  26/06/17</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
 	    </div>
-    </div>
+    </div> <!-- End recent news section -->
+
+    <div class="row paralax-contact-container"> <!-- Paralax contact section -->
+        <div class="col-xs-10 col-xs-offset-1">
+
+            <div class="row">
+
+                <h2 class="section-title">Get in Touch</h2>
+                <p>
+                If you are interested in working with us, working for us, or even just fancy a chat; we are more than happy to answer your questions
+                </p>
+                <a href="/contact" class="btn btn-default">Contact Us</a>
+
+            </div>
+
+        </div>
+    </div> <!-- End paralax contact section -->
+
+    <div class="row our-clients-container"> <!-- Our clients section -->
+        <div class="col-xs-10 col-xs-offset-1">
+
+            <div class="row">
+
+                <h2 class="section-title">Our Clients</h2>
+
+            </div>
+
+        </div>
+    </div> <!-- End our clients section -->
 
 @endsection
 
