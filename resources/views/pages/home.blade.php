@@ -257,6 +257,22 @@
 
                 <h2 class="section-title">Our Clients</h2>
 
+                <div class="col-md-3 col-sm-4">
+                    <img src="{{ asset('img/cat-logo.jpg') }}" height="100%" width="100%" />
+                </div>
+
+                <div class="col-md-3 col-sm-4">
+                    <img src="{{ asset('img/mim-logo.jpg') }}" height="100%" width="100%" />
+                </div>
+
+                <div class="col-md-3 col-sm-4">
+                    <img src="{{ asset('img/lloyds-logo.jpg') }}" height="100%" width="100%" />
+                </div>
+
+                <div class="col-md-3 col-sm-4">
+                    <img src="{{ asset('img/cat-logo.jpg') }}" height="100%" width="100%" />
+                </div>
+
             </div>
 
         </div>
@@ -276,6 +292,7 @@
 // Curently there are no option available.
 
 $('#bootstrap-touch-slider').bsTouchSlider();
+$('#clients-slider').bsTouchSlider();
 
 </script>
 
