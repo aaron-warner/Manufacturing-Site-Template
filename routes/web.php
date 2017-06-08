@@ -13,9 +13,15 @@
 
 /* GENERIC PAGE ROUTES */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('pages.home');
-});
+});*/
+
+Route::get('/', 'NewsController@getMostRecentNews');
+
+/* RESOURCE ROUTES */
+
+Route::resource('news', 'NewsController');
 
 /* AUTH ROUTES */
 

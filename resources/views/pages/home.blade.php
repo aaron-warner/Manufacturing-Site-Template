@@ -1,6 +1,6 @@
 @extends('main')
 
-@section('title', '')
+@section('title', 'Home')
 
 @section('content')
 
@@ -151,81 +151,36 @@
 
                 <h2 class="section-title">Recent News</h2>
 
-                <div class="col-md-4">
+                @foreach ($news as $news)
 
-                    <div class="article-container">
-                        <div class="article-image-container">
-                            <a href="#">
-                                <img src="{{ asset('img/article-image-1.jpg') }}" width="100%" height="100%" class="img-responsive" />
-                            </a>
+                    <div class="col-md-4">
+
+                        <div class="article-container">
+                            <div class="article-image-container">
+                                <a href="{{ route('news.show', $news->slug) }}">
+                                    <img src="{{ asset('uploaded-images/' .$news->image) }}"" width="100%" height="100%" class="img-responsive" />
+                                </a>
+                            </div>
+                            <div class="article-title-container">
+                                <span class="article-title"><a href="{{ route('news.show', $news->slug) }}">{{ $news->title }}</a></span>
+                            </div>
+                            <div class="article-content-container">
+                                <p>
+                                {{ substr($news->body, 0, 100) }}
+                                {{ strlen($news->body) > 100 ? "..." : "" }}
+                                </p>
+                                <a href="{{ route('news.show', $news->slug) }}" class="btn btn-primary">Read More</a>
+                            </div>
+                            <div class="article-info-container">
+                                <span class="published-by">Published by: <a href="/">{{ $news->postedBy }}</a></span>
+                                <br>
+                                <span class="published-on"><i class="fa fa-calendar" aria-hidden="true"></i>  {{ $news->created_at }}</span>
+                            </div>
                         </div>
-                        <div class="article-title-container">
-                            <span class="article-title"><a href="#">100+ Jobs Created</a></span>
-                        </div>
-                        <div class="article-content-container">
-                            <p>
-                            We have just created a branch new facility in the West Midlands supplying over 100 jobs to west midlands residents who have recently either lefg college or undertook an apprenticeship...
-                            </p>
-                            <a href="/" class="btn btn-primary">Read More</a>
-                        </div>
-                        <div class="article-info-container">
-                            <span class="published-by">Published by: <a href="/">Feartech Ltd</a></span>
-                            <br>
-                            <span class="published-on"><i class="fa fa-calendar" aria-hidden="true"></i>  26/06/17</span>
-                        </div>
+
                     </div>
 
-                </div>
-
-                <div class="col-md-4">
-
-                    <div class="article-container">
-                        <div class="article-image-container">
-                            <a href="#">
-                                <img src="{{ asset('img/article-image-2.jpg') }}" width="100%" height="100%" class="img-responsive" />
-                            </a>
-                        </div>
-                        <div class="article-title-container">
-                            <span class="article-title"><a href="#">100+ Jobs Created</a></span>
-                        </div>
-                        <div class="article-content-container">
-                            <p>
-                            We have just created a branch new facility in the West Midlands supplying over 100 jobs to west midlands residents who have recently either lefg college or undertook an apprenticeship...
-                            </p>
-                            <a href="/" class="btn btn-primary">Read More</a>
-                        </div>
-                        <div class="article-info-container">
-                            <span class="published-by">Published by: <a href="/">Feartech Ltd</a></span>
-                            <br>
-                            <span class="published-on"><i class="fa fa-calendar" aria-hidden="true"></i>  26/06/17</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-4">
-
-                    <div class="article-container">
-                        <div class="article-image-container">
-                            <a href="#">
-                                <img src="{{ asset('img/article-image-3.jpg') }}" width="100%" height="100%" class="img-responsive" />
-                            </a>
-                        </div>
-                        <div class="article-title-container">
-                            <span class="article-title"><a href="#">100+ Jobs Created</a></span>
-                        </div>
-                        <div class="article-content-container">
-                            <p>
-                            We have just created a branch new facility in the West Midlands supplying over 100 jobs to west midlands residents who have recently either lefg college or undertook an apprenticeship...
-                            </p>
-                            <a href="/" class="btn btn-primary">Read More</a>
-                        </div>
-                        <div class="article-info-container">
-                            <span class="published-by">Published by: <a href="/">Feartech Ltd</a></span>
-                            <br>
-                            <span class="published-on"><i class="fa fa-calendar" aria-hidden="true"></i>  26/06/17</span>
-                        </div>
-                    </div>
+                @endforeach
 
                 </div>
 
@@ -257,20 +212,20 @@
 
                 <h2 class="section-title">Our Clients</h2>
 
-                <div class="col-md-3 col-sm-4">
-                    <img src="{{ asset('img/cat-logo.jpg') }}" height="100%" width="100%" />
+                <div class="col-md-3 col-sm-4 text-center">
+                    LOGO1
                 </div>
 
-                <div class="col-md-3 col-sm-4">
-                    <img src="{{ asset('img/mim-logo.jpg') }}" height="100%" width="100%" />
+                <div class="col-md-3 col-sm-4 text-center">
+                    LOGO2
                 </div>
 
-                <div class="col-md-3 col-sm-4">
-                    <img src="{{ asset('img/lloyds-logo.jpg') }}" height="100%" width="100%" />
+                <div class="col-md-3 col-sm-4 text-center">
+                    LOGO3
                 </div>
 
-                <div class="col-md-3 col-sm-4">
-                    <img src="{{ asset('img/cat-logo.jpg') }}" height="100%" width="100%" />
+                <div class="col-md-3 col-sm-4 text-center">
+                    LOGO4
                 </div>
 
             </div>

@@ -42,8 +42,17 @@
 		        </div>
 
 		        <div class="col-xs-3 text-center">
-		        	<a href="/login" class="btn btn-default">Login</a>
-			        <a href="/register" class="btn btn-primary">Register</a>
+		        	@if (Auth::check())
+		        		<a href="/dashboard" class="btn btn-primary">Dashboard</a>
+		        		<a href="{{ route('logout') }}" class="btn btn-default" onclick="event.preventDefault();
+                                             document.getElementById('logout-form').submit();">Logout</a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+		        	@else
+			        	<a href="/login" class="btn btn-default">Login</a>
+				        <a href="/register" class="btn btn-primary">Register</a>
+			        @endif
 		        </div>
 
 		    </div>
@@ -62,7 +71,7 @@
 	<!-- Overlay content -->
 	<div class="overlay-nav-content">
 		<a href="/">Home</a>
-		<a href="#">News</a>
+		<a href="/news">News</a>
 		<a href="#">Services</a>
 		<a href="#">Products</a>
 		<a href="#">Contact</a>
