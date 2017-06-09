@@ -26,7 +26,8 @@
 	                        </div>
 	                        <div class="article-content-container">
 	                            <p>
-	                            {{ $news->body }}
+	                            {{ substr($news->body, 0, 100) }}
+                                {{ strlen($news->body) > 100 ? "..." : "" }}
 	                            </p>
 	                            <a href="{{ route('news.show', $news->slug) }}" class="btn btn-primary">Read More</a>
 	                        </div>

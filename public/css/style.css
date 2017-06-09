@@ -405,6 +405,7 @@ a:hover {
     border: 2px solid #EBEBEB;
     background-color: #FFF;
     margin-bottom: 20px;
+    height: 600px;
 }
 
 .article-image-container {
@@ -425,6 +426,7 @@ a:hover {
 
 .article-title-container {
     border-bottom: 2px solid #EBEBEB;
+    min-height: 100px;
 }
 
 .article-title {
@@ -437,6 +439,10 @@ a:hover {
 
 .article-title a:hover {
     color: #FC9732;
+}
+
+.article-content-container {
+    min-height: 120px;
 }
 
 .article-info-container {
@@ -458,4 +464,12 @@ a:hover {
     background-size: cover;
     color: #FFF;
     font-size: 30px;
+}
+
+.paralax-contact-container .btn {
+    margin-bottom: 30px;
+}
+
+.our-clients-container div[class*="col-"] {
+    padding: 25px;
 }

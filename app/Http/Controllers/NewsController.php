@@ -52,7 +52,7 @@ class NewsController extends Controller
 
         $this->validate($request, array(
 
-            'title'         => 'required|max:255',
+            'title'         => 'required|max:40',
             'slug'          => 'unique:news,slug',
             'body'          => 'required',
             'postedBy'   => 'required'

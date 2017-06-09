@@ -213,19 +213,19 @@
                 <h2 class="section-title">Our Clients</h2>
 
                 <div class="col-md-3 col-sm-4 text-center">
-                    LOGO1
+                    <img src="{{ asset('img/jcb-logo.png') }}"" width="100%" height="100%" class="img-responsive img-center" />
                 </div>
 
                 <div class="col-md-3 col-sm-4 text-center">
-                    LOGO2
+                    <img src="{{ asset('img/jlr-logo.png') }}"" width="100%" height="100%" class="img-responsive img-center" />
                 </div>
 
                 <div class="col-md-3 col-sm-4 text-center">
-                    LOGO3
+                    <img src="{{ asset('img/wmp-logo.png') }}"" width="100%" height="100%" class="img-responsive img-center" />
                 </div>
 
                 <div class="col-md-3 col-sm-4 text-center">
-                    LOGO4
+                    <img src="{{ asset('img/cat-logo.png') }}"" width="100%" height="100%" class="img-responsive img-center" />
                 </div>
 
             </div>

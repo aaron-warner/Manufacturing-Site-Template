@@ -19,6 +19,12 @@
 
 Route::get('/', 'NewsController@getMostRecentNews');
 
+/* DASHBOARD PAGE ROUTES */
+
+Route::get('/dashboard', function () {
+    return view('dashboard.dashboard');
+});
+
 /* RESOURCE ROUTES */
 
 Route::resource('news', 'NewsController');
