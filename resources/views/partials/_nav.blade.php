@@ -74,7 +74,7 @@
 		<a href="/news">News</a>
 		<a href="#">Services</a>
 		<a href="#">Products</a>
-		<a href="#">Contact</a>
+		<a href="/contact">Contact</a>
 	</div>
 
 </div>

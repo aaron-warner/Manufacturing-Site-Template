@@ -19,6 +19,10 @@
 
 Route::get('/', 'NewsController@getMostRecentNews');
 
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+
 /* DASHBOARD PAGE ROUTES */
 
 Route::get('/dashboard', function () {

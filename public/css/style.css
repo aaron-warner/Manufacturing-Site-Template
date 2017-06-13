@@ -85,6 +85,17 @@ a:hover {
 	background-color: orange;
 }
 
+/************* DASHBOARD STYLES *************/
+
+.dashboard-sidebar ul li {
+    font-size: 40px;
+    border: 2px solid #EBEBEB;
+}
+
+.dashboard-sidebar ul li:hover {
+    background-color: #000;
+}
+
 /************* SLIDER STYLES *************/
 
 
