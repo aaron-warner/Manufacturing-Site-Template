@@ -34,4 +34,14 @@
 	    document.getElementById("overlay-nav").style.width = "0%";
 	}
 
+	/* Open when someone clicks on the span element */
+	function openDashboardNav() {
+	    document.getElementById("dashboard-nav").style.width = "100%";
+	}
+
+	/* Close when someone clicks on the "x" symbol inside the dashboard */
+	function closeDashboardNav() {
+	    document.getElementById("dashboard-nav").style.width = "0%";
+	}
+
 </script>

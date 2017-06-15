@@ -62,7 +62,8 @@
     transition: 0.5s;
 }
 
-.overlay-nav-content {
+.overlay-nav-content,
+.dashboard-nav-content {
     position: relative;
     top: 25%;
     width: 100%;

@@ -43,7 +43,7 @@
 
 		        <div class="col-xs-3 text-center">
 		        	@if (Auth::check())
-		        		<a href="/dashboard" class="btn btn-primary">Dashboard</a>
+		        		<a href="#" class="btn btn-primary" onclick="openDashboardNav()">Dashboard</a>
 		        		<a href="{{ route('logout') }}" class="btn btn-default" onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">Logout</a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -72,10 +72,33 @@
 	<div class="overlay-nav-content">
 		<a href="/">Home</a>
 		<a href="/news">News</a>
-		<a href="#">Services</a>
+		<a href="/services">Services</a>
 		<a href="#">Products</a>
 		<a href="/contact">Contact</a>
+		@if (Auth::check())
+		<a href="#" onclick="openDashboardNav()">Admin Dashboard</a>
+		@endif
 	</div>
 
 </div>
+
+@if (Auth::check())
+
+<!-- The overlay -->
+<div id="dashboard-nav" class="overlay">
+
+	<!-- Button to close the dashboard navigation -->
+	<a href="javascript:void(0)" class="closebtn" onclick="closeDashboardNav()">&times;</a>
+
+	<!-- dashboard content -->
+	<div class="dashboard-nav-content">
+		<a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i>  Manage News</a>
+		<a href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i>  Manage Clients</a>
+		<a href="#"><i class="fa fa-user" aria-hidden="true"></i>  Manage Users</a>
+		<a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>  Logout</a>
+	</div>
+
+</div>
+
+@endif
 

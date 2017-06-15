@@ -19,15 +19,17 @@
 
 Route::get('/', 'NewsController@getMostRecentNews');
 
+Route::get('/services', function () {
+    return view('pages.services');
+});
+
 Route::get('/contact', function () {
     return view('pages.contact');
 });
 
 /* DASHBOARD PAGE ROUTES */
 
-Route::get('/dashboard', function () {
-    return view('dashboard.dashboard');
-});
+Route::get('/dashboard/manage-news', 'DashboardController@getNews');
 
 /* RESOURCE ROUTES */
 

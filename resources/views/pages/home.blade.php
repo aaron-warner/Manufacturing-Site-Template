@@ -29,8 +29,8 @@
                         <div class="slide-text slide_style_left">
                             <h1 data-animation="animated zoomInRight">Manufacturing in the Midlands</h1>
                             <p data-animation="animated fadeInLeft">The heart of manufacturing is right here</p>
-                            <a href="/about" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">About Us</a>
-                            <a href="/services" target="_blank"  class="btn btn-primary" data-animation="animated fadeInRight">Our Services</a>
+                            <a href="/about" class="btn btn-default" data-animation="animated fadeInLeft">About Us</a>
+                            <a href="/services" class="btn btn-primary" data-animation="animated fadeInRight">Our Services</a>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
             <div class="item">
 
                 <!-- Slide Background -->
-                <img src="{{ asset('img/home-image-2.jpg') }}" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                <img src="{{ asset('img/home-image-2.jpg') }}" alt="Bootstrap Touch Slider" class="slide-image"/>
                 <div class="bs-slider-overlay"></div>
                 <!-- Slide Text Layer -->
                 <div class="slide-text slide_style_center">

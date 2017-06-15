@@ -39,6 +39,17 @@ a:hover {
     margin-right: auto;
 }
 
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
 .no-underline {
     text-decoration: none !important;
 }
@@ -477,10 +488,55 @@ a:hover {
     font-size: 30px;
 }
 
-.paralax-contact-container .btn {
+.parallax-contact-container .btn {
     margin-bottom: 30px;
 }
 
 .our-clients-container div[class*="col-"] {
     padding: 25px;
+}
+
+/*********** SERVICES PAGE STYLES ****************/
+
+.parallax[class*="service"]  {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    width: 100%;
+    min-height: 300px;
+    color: #FFF;
+}
+
+.service-content-container {
+    padding: 20px 0px;
+}
+
+.service-title {
+    font-size: 60px;
+}
+
+.service-section {
+    border: 2px solid #EBEBEB;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.service-section h3 {
+    margin-top: 0;
+}
+
+.service1 {
+    background-image: url("/img/service1.png");
+
+}
+
+.service2 {
+    background-image: url("/img/service2.png");
+}
+
+.service3 {
+    background-image: url("/img/service3.png");
+}
+
+.service4 {
+    background-image: url("/img/service4.png");
 }
