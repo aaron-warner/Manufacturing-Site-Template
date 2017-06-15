@@ -92,10 +92,10 @@
 
 	<!-- dashboard content -->
 	<div class="dashboard-nav-content">
-		<a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i>  Manage News</a>
-		<a href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i>  Manage Clients</a>
-		<a href="#"><i class="fa fa-user" aria-hidden="true"></i>  Manage Users</a>
-		<a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>  Logout</a>
+		<a href="/dashboard/manage-news"><i class="fa fa-newspaper-o" aria-hidden="true"></i>  Manage News</a>
+		<a href="/dashboard/manage-clients"><i class="fa fa-handshake-o" aria-hidden="true"></i>  Manage Clients</a>
+		<a href="/dashboard/manage-users"><i class="fa fa-user" aria-hidden="true"></i>  Manage Users</a>
+		<a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fa fa-sign-out" aria-hidden="true"></i>  Logout</a>
 	</div>
 
 </div>
